@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from main import gen_pass
+from main import gen_gombalan
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -22,5 +23,10 @@ async def heh(ctx, count_heh = 5):
 @bot.command()
 async def password(ctx, count_gen_pass = 10):
     await ctx.send(gen_pass(count_gen_pass))
+
+@bot.command()
+async def gombalan(ctx):
+    gombalan = gen_gombalan()
+    await ctx.send(gombalan)
 
 bot.run("")
