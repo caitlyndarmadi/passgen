@@ -1,3 +1,12 @@
+#import random
+
+#chars = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+#random_string = ""
+#x = int(input("Mau berapa password?"))
+#for i in range(x):
+    #random_string += random.choice(chars)
+#print(random_string)
+
 import random
 
 def gen_pass(pass_length):
@@ -20,3 +29,31 @@ def gen_gombalan():
     ]
 
     return random.choice(list_gombal)
+
+def transportasi():
+    list_transportasi = [
+        "Bersepeda atau jalan kaki jika tempat yang akan ditempui berjarak dekat denganmu",
+        "Mulai menggunakan kendaraan listrik seperti mobil listrik dan motor listrik",
+        "Gunakanlah transportasi umum seperti bis dan angkot untuk mengurangi emisi karbon",
+    ]
+
+    return random.choice(list_transportasi)
+
+def mengurangi():
+    list_mengurangi = [
+        "Gunakanlah botol yang dapat digunakan lebih dari sekali seperti botol tumbler dan botol untuk menggantikan botol plastik sekali pakai",
+        "Gunakanlah tas belanja tote bag atau paper bag untuk mengurangi penggunaan plastik",
+        "Gunakanlah sedotan berbahan besi untuk mengurangi penggunaan sedotan plastik",
+     ]
+
+    return random.choice(list_mengurangi)
+
+def menghemat():
+    list_menghemat = [
+        "Matikanlah lampu dan alat lain yang menggunakan listrik seperti TV atau AC saat tidak digunakan",
+        "Tutuplah keran jika sudah selesai digunakan untuk menghemat air",
+        "Gunakanlah air dan listrik secukupnya dan sesuai dengan kebutuhanmu",
+     ]
+
+    return random.choice(list_menghemat)
+
